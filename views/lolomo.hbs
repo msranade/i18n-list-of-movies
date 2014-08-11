@@ -1,0 +1,21 @@
+<div class="top-rule"></div>
+
+{{#each page_content}}
+  <div class="lolomo_row">
+    <h2>{{ __get_row_title this.title }}</h2>
+  
+  <ul>
+  {{#each this.movies}}
+    <li>
+      <img src="{{this.box_art_150x214}}" 
+        width="150" height="214" 
+        class="boxart" 
+        data-bs-wide="{{this.box_art_350x197}}" 
+        data-title="{{ __get_movie_title this.id }}" />
+    </li>
+  {{/each}}
+  </ul>
+  
+  </div>
+{{/each}} 
+  
