@@ -33,6 +33,10 @@ This is a module that takes care of all the i18n related tasks. It exposes an AP
 
 This directory holds all the static resources such as JS and CSS files.
 
+### /public/javascripts/lolomo.js
+
+This is a client-side JavaScript module that handles the popover functionality when user hovers over the movie image.
+
 ### /tasks
 
 This directory holds all the Grunt tasks that get automatically loaded inside `Gruntfile.js`. Currently there is only one (`jshint`) task that is used for checking code quality.
