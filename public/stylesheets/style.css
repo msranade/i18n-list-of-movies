@@ -18,6 +18,7 @@ body {
   display: inline-block;
   width: 150px;
   height: 214px;
+  border: 1px solid #a4a4a4;
 }
 .lolomo_row h2 {
   font-size: 18px;

@@ -25,7 +25,7 @@ var model = new lolomoModel();
 var content = {};
 
 
-router.get('/list_of_movies/', function(req, res) {
+router.get('/list_of_movies', function(req, res) {
   async.parallel([
     
     // parse lolomo.json file to populate movie data 

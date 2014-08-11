@@ -9,7 +9,7 @@ This is a simple Node.js application that uses Express as a underlying framework
 * `cd /<installation_dir>/i18n-list-of-movies`
 * Run: `npm install`
 * Run: `npm start`
-* Open: http://localhost:3000/list_of_movies/?locale=es_SP
+* Open: http://localhost:3000/list_of_movies?locale=es_SP
 
 ## Structure of Project
 
@@ -56,7 +56,8 @@ Application entry point.
 ## i18n Library
 
 i18n module is written in a way that it can be used in any project independently.
-app.js file has calls to `i18n.configure` and `i18n.init`. These two calls initialize the library. We also register two helpers that are used in Handlebars templates for this project.
+app.js file has calls to `i18n.configure` and `i18n.init`. These two calls initialize the library. We also register two helpers that are used in Handlebars templates for this project. 
+For more detailed information about the library and the API, please take look at the comments in `i18n.js` source code.
 
 ### i18n.configure
 
