@@ -11,7 +11,7 @@
 var fs = require('fs');
 var path = require('path');
 
-module.exports = function IndexModel() {
+module.exports = function LolomoModel() {
   
   /**
    * This method reads a json file at given location, and calls a 

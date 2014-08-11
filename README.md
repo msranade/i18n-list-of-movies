@@ -1,15 +1,15 @@
 ## Overview
 
-This is a simple Node.js application that uses Express as a underlying framework. This application renders Netflix like page with list of movies. List of movies is divided into various different rows. Row title comes from language specific .properties file from "locales" directory. Depending upon which "locale" is set for the request, application uses appropriate .properties file. If no locale is passed, it defaults to "en_US".
+This is a simple Node.js application that uses Express as a underlying framework. This application renders Netflix like page with list of movies. List of movies is divided into various different rows. Row title comes from a language specific .properties file from "locales" directory. Depending upon which "locale" is set for the request, application uses appropriate .properties file. If no locale is passed, it defaults to "en_US".
 
 ## Starting the App
 
 
 * Make sure you have [Node and NPM](http://nodejs.org/download/) installed
-* Make sure you are inside "i18n-list-of-movies" directory
+* `cd /<installation_dir>/i18n-list-of-movies`
 * Run: `npm install`
 * Run: `npm start`
-* Open: http://localhost:3000/list_of_movies/?local=en_US'
+* Open: http://localhost:3000/list_of_movies/?locale=en_US'
 
 ## Structure of Project
 
@@ -66,4 +66,12 @@ This method is a middleware that makes use of the `local` query parameter to set
 
 There are two helpers added: `__get_row_title` and `__get_movie_title`. These helpers are used in the template to get row titles and movie titles. Movie titles are shown when user hovers over a movie image.
 
+## Miscellaneous
 
+### Use of Control Flow Library
+
+This project uses "async" control flow library. There are lot of other options which can serve the same purpose. We can also make use of Promises library such as [Bluebird](https://www.npmjs.org/package/bluebird) for better performance.
+
+### i18n Strings in Client-side Javascript
+
+i18n Strings can be easily made available to the client side Javascript by passing the entire strings object over to template by calling `JSON.stringify` and making it client side Javascript object as a inline Javascript.
