@@ -9,7 +9,7 @@ This is a simple Node.js application that uses Express as a underlying framework
 * `cd /<installation_dir>/i18n-list-of-movies`
 * Run: `npm install`
 * Run: `npm start`
-* Open: http://localhost:3000/list_of_movies/?locale=en_US'
+* Open: http://localhost:3000/list_of_movies/?locale=en_US
 
 ## Structure of Project
 
