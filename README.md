@@ -79,3 +79,11 @@ This project uses "async" control flow library. There are lot of other options w
 ### i18n Strings in Client-side Javascript
 
 i18n Strings can be easily made available to the client side Javascript by passing the entire strings object over to template by calling `JSON.stringify` and making it client side Javascript object as a inline Javascript.
+
+### Other Possible Improvements
+
+Main intention of this project is to demonstrate the use of i18n library that has a async API to get translations from .properties files. Following things should be taken care of before its ready for production use.
+
+* JavaScript and CSS minification and creating combo files
+* Customized version of Bootstrap to include only required components
+* Enable GZipping and proper caching headers
